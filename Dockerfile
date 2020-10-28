@@ -10,3 +10,4 @@ RUN chmod +x /home/start.sh
 
 
 CMD /home/start.sh
+# Testing
