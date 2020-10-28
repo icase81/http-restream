@@ -1,0 +1,1 @@
+cvlc -I dummy $INPUT --sout "#transcode{vcodec=$FORMAT,quality=5,fps=20,acodec=none,width=$VIDEO_WIDTH}:standard{access=http{mime=multipart/x-mixed-replace; boundary=7b3cc56e5f51db803f790dad720ed50a},mux=mpjpeg,dst=:$HTTP_PORT/videostream.cgi}" 2> /dev/null
